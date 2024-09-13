@@ -1,8 +1,9 @@
 {
   "name": "email-phone-validator",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "A package to validate email addresses and phone numbers",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest"
