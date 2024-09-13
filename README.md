@@ -6,25 +6,54 @@ To install the package, use npm:
 
 **npm install email-phone-validator**
 
-Usage 
-Email Validation:
+**Usage Javascript:**
+
+// Load the package
+const { isValidEmail, isValidPhoneNumber } = require('email-phone-validator');
+
+// Example usage
+const email = 'test@example.com';
+const phoneNumber = '+123-456-7890';
+
+console.log(`Is '${email}' a valid email?`, isValidEmail(email)); // true
+console.log(`Is '${phoneNumber}' a valid phone number?`, isValidPhoneNumber(phoneNumber)); // true
+
+**In an ES Module Environment**
+If you're using ES modules (e.g., in a modern JavaScript environment with module support), you can import and use the package like this:
+
+// Import the package
+import { isValidEmail, isValidPhoneNumber } from 'email-phone-validator';
+
+// Example usage
+const email = 'test@example.com';
+const phoneNumber = '+123-456-7890';
+
+console.log(`Is '${email}' a valid email?`, isValidEmail(email)); // true
+console.log(`Is '${phoneNumber}' a valid phone number?`, isValidPhoneNumber(phoneNumber)); // true
+
+
+**Usage Typescript:**
+
+**Email Validation:**
 import { isValidEmail } from 'email-phone-validator';
 const email = 'test@example.com';
 console.log(isValidEmail(email)); // true or false
 
-Phone Number Validation
+**Phone Number Validation:**
 
 import { isValidPhoneNumber } from 'email-phone-validator';
 
 const phoneNumber = '+123-456-7890';
 console.log(isValidPhoneNumber(phoneNumber)); // true or false
+
 isValidEmail(email: string): boolean
+
 Validates if the provided string is a valid email address.
 
-Parameters:
-
+**Parameters:**
 email (string): The email address to validate.
-Returns:
+
+**Returns:**
 
 boolean: true if the email is valid, otherwise false.
 isValidPhoneNumber(phoneNumber: string): boolean
@@ -40,7 +69,7 @@ Running Tests
 
 To run tests, make sure you have Jest installed and run:
 **npm test**
-Contributing
+**Contributing**
 Fork the repository.
 Create a new branch (git checkout -b feature-branch).
 Commit your changes (git commit -am 'Add new feature').
