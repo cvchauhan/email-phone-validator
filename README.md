@@ -50,4 +50,4 @@ Contributions welcome! Check the ``LICENSE`` file for more info.
 
 Distributed under the unlicense public domain. See ``LICENSE`` for more information.
 
-[https://github.com/cvchauhan/email-phone-validatorr](https://github.com/cvchauhan/email-phone-validatorr)
+[https://github.com/cvchauhan/email-phone-validator](https://github.com/cvchauhan/email-phone-validator)
